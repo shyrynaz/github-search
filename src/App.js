@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Github from "./Github";
@@ -87,7 +87,7 @@ class App extends Component {
     if (this.state.accessToken) {
       gitter = <Github />;
     } else {
-      gitter = <button className="primary">Login</button>;
+      gitter = "Click on login to view github";
     }
     return (
       <div className="App">
